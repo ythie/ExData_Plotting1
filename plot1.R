@@ -1,0 +1,5 @@
+setwd("C:/Users/Ythie/Documents/Data Science/Exploratory Data Analysis")
+c <- read.table('household_power_consumption.txt',skip=66637,nrows=2880,sep = ';')
+plot(hist(c$V3),xlab = 'Global Active Power (kilowatts)',main = 'Global Active Power',col = 'red')
+dev.copy(png,'plot1.png',width=480,height=480)
+dev.off()
